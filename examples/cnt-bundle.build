@@ -1,0 +1,45 @@
+! cnt bundle
+
+! structural parameters of cnt
+intg    n = 0
+intg    m = 6
+real    l = 50.0
+
+real    radius      = 0.39 * powreal( powreal(n+m, 2) - n*m , 0.5 )
+real    diameter    = radius * 2.0
+real    van_radius  = 3.4   ! Van der Waals radius of carbon atoms
+real    distance    = diameter + van_radius
+
+macro   z_offset    = randreal(0.0, 10.0)
+
+real    sqrt_3      = 1.732
+
+
+nanotube(n,m,l)
+add
+
+nanotube(n,m,l)
+move(distance, 0, z_offset)
+add
+
+nanotube(n,m,l)
+move(-distance, 0, z_offset)
+add
+
+nanotube(n,m,l)
+move(distance/2, sqrt_3*distance/2, z_offset)
+add
+
+nanotube(n,m,l)
+move(distance/2, -sqrt_3*distance/2, z_offset)
+add
+
+nanotube(n,m,l)
+move(-distance/2, sqrt_3*distance/2, z_offset)
+add
+
+nanotube(n,m,l)
+move(-distance/2, -sqrt_3*distance/2, z_offset)
+add
+
+create cnt-bundle.data

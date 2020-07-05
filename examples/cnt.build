@@ -1,0 +1,7 @@
+! build a cnt
+! chiral index = (0,6)
+! length (angstrom) = 50.0
+
+nanotube(0, 6, 50.0)
+add
+create  cnt.data
