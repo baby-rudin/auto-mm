@@ -1,3 +1,4 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 # auto-mm
 
 Auto-mm (Automatic molecular modeling) 是一个用来快速构建分子模型的小软件。
@@ -31,7 +32,7 @@ chmod +x ./auto-mm
 
 ### 2.1 程序逻辑
 
-在程序中存在两个抽象的三维空间，$fragment$ 空间和 $modeling$ 空间。
+在程序中存在两个抽象的三维空间，\\(fragment\\) 空间和 $modeling$ 空间。
 
 * 当输入建模指令时，$fragment$ 空间会被清空，并在其中按要求构建出相应的结构。例如，当输入 `nanotube(0, 6, 50.0)` 时，$fragment$ 空间会被清空，并会在其中构建出一根手性指数为 $n=0$ 、$m=6$ ，并且长度为 $50.0 A$ 的碳纳米管。
 
