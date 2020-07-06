@@ -10,7 +10,7 @@ real    diameter    = radius * 2.0
 real    van_radius  = 3.4   ! Van der Waals radius of carbon atoms
 real    distance    = diameter + van_radius
 
-macro   z_offset    = randreal(0.0, 10.0)
+macro   z_offset    = 0     ! randreal(0.0, 10.0)
 
 real    sqrt_3      = 1.732
 
