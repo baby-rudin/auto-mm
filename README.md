@@ -18,11 +18,27 @@ auto-mm.exe    Windows版本
 ```
 
 可直接运行
+
+* Linux bash
 ```bash
 cd auto-mm
 cp bin/auto-mm ./
 chmod +x ./auto-mm
 ./auto-mm < examples/cnt.build
+```
+
+* Windows powershell
+```
+cd auto-mm
+cp .\bin\auto-mm.exe .\
+Get-Content .\examples\cnt.build | .\auto-mm.exe
+```
+
+* Windows cmd
+```
+cd auto-mm
+cp .\bin\auto-mm.exe .\
+.\auto-mm.exe < .\examples\cnt.build
 ```
 
 ## 2 输入文件
