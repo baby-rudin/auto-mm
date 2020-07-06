@@ -1,3 +1,0 @@
-/mnt/e/some-files/codes/auto-mm/CMakeFiles/rebuild_cache.dir
-/mnt/e/some-files/codes/auto-mm/CMakeFiles/auto-mm.dir
-/mnt/e/some-files/codes/auto-mm/CMakeFiles/edit_cache.dir
