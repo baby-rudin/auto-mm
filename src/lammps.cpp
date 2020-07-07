@@ -1,5 +1,6 @@
 #include "lammps.h"
 #include "type.hpp"
+#include "constant.h"
 #include <string>
 #include <cmath>
 
